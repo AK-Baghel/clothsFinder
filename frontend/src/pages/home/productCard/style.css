@@ -1,0 +1,38 @@
+.productCardContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+    padding: 0.5rem;
+    border: 1px solid orange;
+    /* background-color: rgb(199, 199, 199); */
+    border-radius: 20px;
+    gap: 1rem;
+    margin-inline: 1rem;
+}
+
+.productCardImg {
+    border-radius: 20px;
+    width: 250px;
+    height: 300px;
+}
+
+.productCardTitle {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.productCardButton {
+    font-weight: 700;
+    color: white;
+    background-color: rgb(156, 102, 0);
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.productCardButton:hover {
+    background-color: orange;
+    text-decoration: underline;
+}

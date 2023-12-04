@@ -1,0 +1,224 @@
+.homeMain {
+    /* margin-block: 1rem; */
+}
+
+.homeContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    justify-content: center;
+    align-items: center;
+    margin-block: 4rem;
+}
+
+.productContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+}
+
+.homeCollections {
+    color: #292929;
+    /* color: #A7FFFF; */
+    letter-spacing: 2px;
+    font-size: 2rem;
+    padding: 0.5rem 3rem;
+    font-weight: 600;
+}
+
+.homeBannerMen {
+    /* align-items: center; */
+    /* font-size: ; */
+    width: 95vw;
+    height: 30vh;
+    background-image: url('https://hips.hearstapps.com/hmg-prod/images/index-online-64da7782717b2.jpg?crop=1.00xw:1.00xh;0,0&resize=1200:*');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+.homeBannerWomen {
+    /* align-items: center; */
+    /* font-size: ; */
+    width: 95vw;
+    height: 30vh;
+    background-image: url('https://www.hindustantimes.com/ht-img/img/2023/10/16/550x309/amazon_sale_2023_biba_kurta_pants_sets_1697426150282_1697426162098.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+.homeBannerKid {
+    /* align-items: center; */
+    /* font-size: ; */
+    width: 95vw;
+    height: 30vh;
+    background-image: url('https://www.sassymamasg.com/wp-content/uploads/2023/09/indian-dress-singapore-nimbu.jpeg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+.homeBannerRegular {
+    /* align-items: center; */
+    /* font-size: ; */
+    width: 95vw;
+    height: 30vh;
+    background-image: url('https://media.istockphoto.com/id/1015582706/photo/wardrobe-full-of-different-color-material-and-texture-clothes-accessories-in-the-closet.jpg?s=612x612&w=0&k=20&c=CdEthUETArWQkIS3P3hQ7NctXkesC3efiX6ZW58phgY=');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+.homeBannerBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* color: rgb(0, 162, 255); */
+    width: 95vw;
+    height: 30vh;
+    transition: all 0.5s ease;
+}
+
+.homeBannerText {
+    background-color: rgba(255, 0, 0, 0.726);
+    color: white;
+    font-size: 2rem;
+    padding: 2px 10px;
+    font-weight: 600;
+}
+
+.homeBannerBox:hover {
+    font-style: italic;
+    /* background-color: rgba(0, 0, 0, 0.459); */
+    background-color: rgba(0, 204, 255, 0.349);
+    /* color: white; */
+}
+
+.displayBanner {
+    width: 95vw;
+    height: 50vh;
+    background-image: url('https://st3.depositphotos.com/9747634/32010/i/450/depositphotos_320104748-stock-photo-hangers-with-different-clothes-in.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.displayBannerContainer {
+    width: 95vw;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    transition: all 0.5s ease;
+    background-color: rgba(0, 0, 0, 0.418);
+}
+
+.displayBannerContainer:hover {
+    background-color: rgba(0, 0, 0, 0.568);
+
+}
+
+.displayBannerText {
+    color: white;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.displayBannerHeading {
+    color: white;
+    font-size: 4.5rem;
+    font-weight: 600;
+
+}
+
+.displayBannerButtons {
+    display: flex;
+    gap: 2rem;
+}
+
+
+
+
+@media (max-width:720px) {
+    .homeBannerText {
+
+        font-size: 2rem;
+
+    }
+
+    .homeCollections {
+
+        font-size: 1.5rem;
+    }
+
+    .displayBannerText {
+        color: white;
+        font-size: 2rem;
+        font-weight: 600;
+    }
+
+    .displayBannerHeading {
+        color: white;
+        font-size: 3.5rem;
+        font-weight: 600;
+
+    }
+}
+
+@media (max-width:500px) {
+    .homeBannerText {
+
+        font-size: 1.5rem;
+
+    }
+
+    .homeCollections {
+
+        font-size: 1.5rem;
+        padding: 0.5rem 2rem;
+    }
+
+    .displayBannerText {
+        color: white;
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+
+    .displayBannerHeading {
+        color: white;
+        font-size: 2.5rem;
+        font-weight: 600;
+
+    }
+}

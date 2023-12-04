@@ -1,0 +1,17 @@
+.marqueeContainer {
+    margin: 0 auto;
+    width: 90vw;
+    border-radius: 20px;
+    margin-block: 2rem;
+}
+
+.marquee {
+    border-radius: 20px;
+}
+
+.marqueeImg {
+    border-radius: 20px;
+    margin: 10px;
+    width: 160px;
+    height: 115px;
+}
