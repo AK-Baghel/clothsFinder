@@ -1,0 +1,568 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Outfit", Sans-serif;
+
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.headerItemLink {
+    color: black;
+    text-decoration: none;
+    transform: all 0.5s ease;
+
+}
+
+.headerItemLink:hover {
+    color: red;
+}
+
+.headerContainer {
+
+    max-width: 100vw;
+    user-select: none;
+    /* width: 100vw; */
+    color: white;
+}
+
+.active {
+    color: aqua;
+}
+
+.headerLogo {
+    cursor: pointer;
+}
+
+.headerLogoImg {
+    /* width: 100%; */
+    color: aqua;
+    font-size: 2rem;
+
+}
+
+.headerItems {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #292929;
+
+    /* justify-content: space-around; */
+    gap: 2rem;
+    /* background-color: #72b1ec; */
+    /* background-color: aqua; */
+    /* color: black; */
+    color: white;
+    padding: 1rem 1.3rem;
+    font-size: 1.1rem;
+    align-items: center;
+    height: 15vh;
+}
+
+
+
+.headerAllItem {
+    display: flex;
+    /* width: 100vw; */
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1.5rem;
+    transition: all 0.5s ease;
+    height: fit-content;
+    padding: 8px 0px 0px 0px;
+}
+
+.headerItem {
+    cursor: pointer;
+    transition: all 0.5s ease;
+    font-size: 1rem;
+    /* text-align: center; */
+}
+
+.headerItem:hover {
+    /* color: rgb(99, 0, 197); */
+}
+
+.headerBar {
+    display: none;
+    font-size: 2.7rem;
+    position: absolute;
+    right: 3.5vw;
+    top: 10.5vh;
+    color: #d42a00;
+    cursor: pointer;
+}
+
+.headerCross {
+    font-size: 4rem;
+    top: 9vh;
+    right: 2.5vw;
+}
+
+.headerDropDown {
+    font-size: 2rem;
+}
+
+.headerDrop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerPopUpBox {
+    position: absolute;
+    top: 3rem;
+    color: rgb(255, 255, 255);
+    /* background-color: yellow; */
+    padding-top: 1.5rem;
+    width: 100vw;
+    left: 0rem;
+    animation: myAnim 0.5s ease 0s 1 normal forwards;
+    z-index: 9;
+}
+
+.headerPopUpBoxItems {
+    background-color: blueviolet;
+    padding: 1rem 1rem;
+    overflow: hidden;
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.headerPopUpBoxItem {
+    width: fit-content;
+    height: fit-content;
+    font-size: 0.9rem;
+    margin-inline: 10px;
+    margin-block: 10px;
+}
+
+
+/* Header Vertical Toggle  */
+.headerVerticalToggle {
+    /* background-color: rgb(152, 194, 233); */
+    background-color: #141B2D;
+    display: flex;
+
+    padding: 5px 10px;
+    font-size: 1rem;
+    border-radius: 20px;
+}
+
+.headerVerticalToggles {
+    padding: 5px 15px;
+    cursor: pointer;
+    transform: all 0.5s ease;
+}
+
+
+.headerVerticalToggleActive {
+    color: red;
+    background-color: #72b1ec;
+    transform: all 0.5s ease;
+    border-radius: 20px;
+}
+
+.headerLeft {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+}
+
+.headerRight {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.headerFlag {
+    width: 30px;
+    height: 28px;
+    border-radius: 50%;
+    border: 1px solid rgb(168, 168, 168);
+    margin: auto;
+    animation: rotateY 1.5s infinite linear;
+}
+
+.hoverUnderline {
+    display: inline-block;
+    position: relative;
+    /* color: aqua; */
+}
+
+.hoverUnderline:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: yellow;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.hoverUnderline:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.headerSearch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.3rem;
+    background-color: white;
+    /* padding-right: 0.5rem; */
+    /* width: 27rem; */
+    height: 2.5rem;
+}
+
+.headerSearch:hover {
+    border: 1px solid aqua;
+}
+
+.searchInput {
+    width: 25rem;
+    padding: 5px;
+    border: none;
+    font-size: 1.2rem;
+    outline: none;
+    /* padding: 0.5rem; */
+}
+
+.searchIcon {
+    margin-right: 0.5rem;
+    font-size: 1.5rem;
+    /* background-color: yellow; */
+    color: black;
+    /* padding: 0.5rem; */
+    cursor: pointer;
+}
+
+.searchContainer {
+    position: absolute;
+    top: 15vh;
+    background-color: white;
+    width: 80vw;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+.searchItems {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 1rem;
+    padding: 0.5rem;
+    border: 1px solid black;
+}
+
+.searchItem {
+    width: 22vw;
+    color: black;
+}
+
+.headerSearchBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.3rem;
+    /* background-color: rgb(68, 68, 68); */
+    /* padding-right: 0.5rem; */
+    /* width: 27rem; */
+    height: 2.5rem;
+    display: none;
+}
+
+.headerSearchBox:hover {
+    border: 1px solid aqua;
+}
+
+
+.headerBannerPages {
+    display: flex;
+    gap: 2rem;
+}
+
+.headerBanner {
+    background-color: rgb(167, 255, 255);
+    display: flex;
+    /* width: 90vw; */
+    padding: 0.8rem 7rem;
+    /* margin: 0 auto; */
+
+    justify-content: space-between;
+}
+
+.headerCall {
+    display: flex;
+    gap: 0.5rem;
+    color: black;
+    font-weight: 600;
+}
+
+.headerBannerItem {
+    color: rgb(37, 37, 37);
+    cursor: pointer;
+    transition: all 0.5s ease;
+    /* font-size: 1.1rem; */
+    font-weight: 600;
+    /* text-align: center; */
+}
+
+.bannerHoverUnderline {
+    display: inline-block;
+    position: relative;
+    /* color: aqua; */
+}
+
+.bannerHoverUnderline:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: red;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.bannerHoverUnderline:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.bannerActive {
+    color: rgb(0, 18, 184);
+}
+
+/* .headerCallNumber {
+    letter-spacing: 1px;
+} */
+
+
+
+@keyframes rotateY {
+    to {
+        transform: rotateY(360deg);
+    }
+}
+
+
+
+@media (max-width:931px) {
+
+    .searchInput {
+        width: 90vw;
+        font-size: 1rem;
+
+    }
+
+    .headerBanner {
+        font-size: 0.8rem;
+        padding: 0.7rem 1rem;
+    }
+
+    .headerBannerPages {
+        gap: 1rem;
+    }
+
+    .headerSearchBox {
+        display: block;
+        display: flex;
+    }
+
+    .headerItemLink {
+        color: white;
+    }
+
+    .headerItems {
+        height: 15vh;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        /* align-items: flex-start; */
+    }
+
+    .headerSearch {
+        display: none;
+    }
+
+
+
+    .headerLogo {
+        display: flex;
+        align-items: center;
+    }
+
+    .headerLogoImg {
+        width: 220px;
+    }
+
+    .headerVerticalToggles {
+        color: black;
+    }
+
+    .headerVerticalToggleActive {
+        color: red;
+    }
+
+
+    /* .translateIcon {
+        width: 10rem;
+        position: relative;
+        right: 4rem;
+        font-size: 1.7rem;
+        color: white;
+        cursor: pointer;
+    }
+
+    .translateIcon:hover {
+        color: rgb(114, 11, 114);
+    } */
+
+    .headerAllItem {
+        /* height: 85vh; */
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: start;
+        position: absolute;
+        background-color: #A7FFFF;
+        color: rgb(255, 255, 255);
+        left: 0;
+        top: 20vh;
+        width: 100vw;
+        min-height: 85vh;
+        padding: 2rem 2rem;
+        z-index: 99;
+        color: black;
+        font-weight: 600;
+    }
+
+    .active {
+        color: rgb(114, 11, 114);
+    }
+
+    .headerMobile {
+        transform: translateX(-60rem);
+        transition: all 1s ease;
+    }
+
+    .headerItem {
+        text-align: left;
+        /* color: black; */
+    }
+
+    .headerBar {
+        display: block;
+        color: white;
+    }
+
+    /* .headerCall {
+        color: rgb(238, 255, 4);
+    } */
+
+    .headerPopUpBox {
+        position: static;
+        color: rgb(255, 255, 255);
+        /* background-color: yellow; */
+        padding: 0rem;
+        margin-right: 5rem;
+        margin: -1rem 5rem -1rem 0rem;
+        width: 80vw;
+        animation: none;
+    }
+
+    .headerPopUpBoxItems {
+        background-color: blueviolet;
+        padding: 1rem 2rem;
+        width: 80vw;
+    }
+
+    .headerPopUpBoxItems {
+        background-color: blueviolet;
+        padding: 1rem 1rem;
+        overflow: scroll;
+        height: 70vh;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .headerPopUpBoxItem {
+        width: fit-content;
+        height: fit-content;
+        font-size: 0.9rem;
+        margin-inline: 10px;
+        margin-block: 10px;
+    }
+
+    .headerLeft {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: flex-start;
+    }
+
+    .headerRight {
+        flex-direction: column;
+        align-items: start;
+    }
+
+}
+
+
+
+@keyframes myAnim {
+    0% {
+        animation-timing-function: ease-in;
+        opacity: 1;
+        transform: translateY(45px);
+    }
+
+    24% {
+        opacity: 1;
+    }
+
+    40% {
+        animation-timing-function: ease-in;
+        transform: translateY(24px);
+    }
+
+    65% {
+        animation-timing-function: ease-in;
+        transform: translateY(12px);
+    }
+
+    82% {
+        animation-timing-function: ease-in;
+        transform: translateY(6px);
+    }
+
+    93% {
+        animation-timing-function: ease-in;
+        transform: translateY(4px);
+    }
+
+    25%,
+    55%,
+    75%,
+    87% {
+        animation-timing-function: ease-out;
+        transform: translateY(0px);
+    }
+
+    100% {
+        animation-timing-function: ease-out;
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
